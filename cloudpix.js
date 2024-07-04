@@ -1,4 +1,5 @@
-function(t, e) {
+//<![CDATA[
+! function(t, e) {
     "use strict";
     "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? module.exports = e() : t.Imgur = e()
 }(this, function() {
@@ -104,9 +105,10 @@ new Imgur({
    
  function copyText() {
    var copyText = document.getElementById("copyinput");
-	 
+   /* text selecter */
    copyText.select();
-	 
+   /* text select number of range */
   copyText.setSelectionRange(0, 99999)
-	 
+  /* copy text command */
    document.execCommand("copy");}
+   //]]>
